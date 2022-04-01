@@ -29,6 +29,15 @@
   margin-bottom: 1rem;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--color-primary);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
 }
