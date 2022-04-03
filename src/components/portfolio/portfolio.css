@@ -20,7 +20,12 @@
 }
 
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 0rem;
+}
+
+.portfolio__item p {
+  margin-bottom: 1rem;
+  color: var(--color-light)
 }
 
 .portfolio__item-cta {

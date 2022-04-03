@@ -1,16 +1,29 @@
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white)
+input,
+textarea {
+  width: 70%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+  transition: var(--transition);
 }
 
+input:focus,
+textarea:focus {
+  border: 2px solid var(--color-primary);
+
+  color: var(--color-white);
+}
+
+button h4 {
+    padding: 0.7rem 2rem;
+}
