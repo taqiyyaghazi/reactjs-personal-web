@@ -1,5 +1,5 @@
 footer {
-    background: var(--color-primary);
+    background: var(--color-bg-variant);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-    color: var(--color-bg);
+    color: var(--color-primary);
 }
 
 .footer__logo {
@@ -44,13 +44,13 @@ footer a {
 
 .footer__socials a:hover {
     background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg)
+    color: var(--color-primary);
+    border-color: var(--color-primary)
 }
 
 .footer__copyright {
     margin-bottom: 4rem;
-    color: var(--color-bg)
+    color: var(--color-primary)
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
