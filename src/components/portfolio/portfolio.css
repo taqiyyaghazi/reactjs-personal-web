@@ -3,9 +3,10 @@
 }
 
 .portfolio__item {
-  background: var(--color-bg-variant);
   padding: 1.3rem;
+  border-bottom: 0.2px solid var(--color-primary);
   border-radius: 2rem;
+  backdrop-filter: blur(2px);
   transition: var(--transition);
 }
 
@@ -25,7 +26,7 @@
 
 .portfolio__item p {
   margin-bottom: 1rem;
-  color: var(--color-light)
+  color: var(--color-light);
 }
 
 .portfolio__item-cta {

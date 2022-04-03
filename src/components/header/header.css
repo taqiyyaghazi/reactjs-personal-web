@@ -46,6 +46,7 @@ header {
   left: calc(50% - 10rem); /* center image */
   margin-bottom: 4rem;
   border-radius: 12rem;
+  backdrop-filter: blur(5px);
   overflow: hidden;
 }
 

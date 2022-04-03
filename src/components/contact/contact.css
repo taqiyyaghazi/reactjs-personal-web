@@ -3,6 +3,8 @@ form {
   flex-direction: column;
   gap: 1.2rem;
   align-items: center;
+  border-radius: 2rem;
+  backdrop-filter: blur(2px);
 }
 
 input,
