@@ -19,8 +19,13 @@
 
 .experience__container > div h3 {
   text-align: center;
-  margin-bottom: 2rem;
   color: var(--color-primary);
+}
+
+.experience__container > div h5 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-light);
 }
 
 .experience__content {
@@ -41,28 +46,28 @@
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
-    .experience__container {
-      grid-template-columns: 1fr;
-    }
-
-    .experience__container > div {
-      width: 80%;
-      padding: 2rem;
-      margin: 0 auto;
-    }
-
-    .experience__content {
-      padding: 1rem;
-    }
+  .experience__container {
+    grid-template-columns: 1fr;
   }
+
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+}
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {
   .experience__container {
-      gap: 1rem;
+    gap: 1rem;
   }
 
   .experience__container > div {
-      width: 100%;
+    width: 100%;
   }
 }
