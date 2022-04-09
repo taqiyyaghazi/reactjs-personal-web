@@ -36,7 +36,7 @@ const ParticleBg = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -67,7 +67,7 @@ const ParticleBg = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 20,
           },
           opacity: {
             value: 0.5,
@@ -80,7 +80,6 @@ const ParticleBg = () => {
             value: 5,
           },
         },
-        detectRetina: true,
       }}
     />
   );

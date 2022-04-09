@@ -41,36 +41,18 @@ const data = [
   },
   {
     id: 4,
-    image: "https://taqiyyaghazi.github.io/img/projects/mm.png",
-    title: "Desain Cover Buku Muda Memimpin",
-    desc: "Buku Muda Memimpin merupakan karya yang ditulis oleh Shoffan Mujahid (Mahasiswa Universitas Sebelas Maret) dan diterbitkan JSI Press.",
+    image: "https://taqiyyaghazi.github.io/img/projects/proly.png",
+    title: "Proly (Product Analysis) App",
+    desc: "Aplikasi yang dibuat menggunakan model machine learning dan dapat menganalisis sentimen produk melalui ulasannya.",
     github: "",
-    demo: "",
-    view: "",
-  },
-  {
-    id: 5,
-    image: "https://taqiyyaghazi.github.io/img/projects/mhr.png",
-    title: "Desain Cover Buku Memimpin Hati Rakyat",
-    desc: "Buku Memimpin Hati Rakyat merupakan karya yang ditulis oleh Shoffan Mujahid (Mahasiswa Universitas Sebelas Maret) dan telah diterbitkan oleh Sabuk Pustaka.",
-    github: "",
-    demo: "",
-    view: "",
-  },
-  {
-    id: 6,
-    image: "https://taqiyyaghazi.github.io/img/projects/bfp-predictor.png",
-    title: "Body Fat Predictor App",
-    desc: "Aplikasi yang dibuat menggunakan model machine learning dan dapat mengestimasi jumlah lemak dalam tubuh menggunakan beberapa indikator.",
-    github: "",
-    demo: "",
+    demo: "http://proly.herokuapp.com/",
     view: "",
   },
 ];
 
 const codingProject = data.map(
   ({ id, image, title, desc, github, demo, view }) => {
-    if (github !== "") {
+    if (github !== "" && demo !== "") {
       return (
         <SwiperSlide key={id} className="portfolio__item">
           <div className="portfolio__item-image">
@@ -82,6 +64,21 @@ const codingProject = data.map(
             <a href={github} className="btn" target="_blank">
               Github
             </a>
+            <a href={demo} className="btn btn-primary" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </SwiperSlide>
+      );
+    } else if (demo !== "") {
+      return (
+        <SwiperSlide key={id} className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={image} alt={title} />
+          </div>
+          <h3>{title}</h3>
+          <p>{desc}</p>
+          <div className="portfolio__item-cta">
             <a href={demo} className="btn btn-primary" target="_blank">
               Live Demo
             </a>
