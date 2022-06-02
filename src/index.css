@@ -144,6 +144,10 @@ img {
   height: 80%;
 }
 
+#loading-center {
+  display: none;
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
   .container {
@@ -161,6 +165,14 @@ img {
 
   .loading-text{
     text-align: center;
+  }
+
+  #loading-left {
+    display: none;
+  }
+
+  #loading-center {
+    display: block;
   }
 }
 
