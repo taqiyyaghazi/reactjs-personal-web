@@ -1,58 +1,62 @@
-import React from "react";
-import "./portfolio.css";
+import React from 'react';
+import './portfolio.css';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from 'swiper';
 
 const data = [
   {
     id: 1,
-    image: "https://taqiyyaghazi.github.io/img/projects/bbbook.png",
-    title: "Desain Brand Logo BersamaBisa Book Publishing",
-    desc: "BersamaBisa Book Publishing merupakan lembaga penerbitan dibawah naungan komunitas BersamaBisa.id.",
-    github: "",
-    demo: "",
-    view: "",
+    image:
+      'https://raw.githubusercontent.com/taqiyyaghazi/taqiyyaghazi.github.io/main/img/projects/cover%20chatbot.png',
+    title: 'Chatbot NLP Based Central AI',
+    desc: 'CENTRAL AI adalah sebuah digital startup yang berfokus dalam hal membantu pelayanan cepat dan efektif untuk UMKM, perusahaan yang memiliki aplikasi atau website, universitas, organisasi lain berbadan hukum maupun sejenisnya untuk melayani customer dengan menyediakan produk-produk as services berbasis Artificial Intelligence seperti Chatbot, OCR, dan Notula.',
+    github: '',
+    demo: '',
+    view: 'https://chatbot.centralai.id/',
   },
   {
     id: 2,
-    image: "https://taqiyyaghazi.github.io/img/projects/bbid.png",
-    title: "Desain Brand Logo BersamaBisa.id",
-    desc: "BersamaBisa.id merupakan komunitas Sociopreneur yang dibentuk oleh mahasiswa Universitas Sebelas Maret Surakarta.",
-    github: "",
-    demo: "",
-    view: "",
+    image:
+      'https://raw.githubusercontent.com/taqiyyaghazi/taqiyyaghazi.github.io/main/img/projects/Dashboard%20Central%20AI.png',
+    title: 'Dashboard Chatbot Central AI',
+    desc: 'Dashboard merupakan salah satu fitur yang sangat penting ketika mengembangkan sebuah aplikasi. Dashboard Chatbot Central AI membantu para customer dalam melakukan konfigurasi fitur chatbot, melihat rangkuman statistik interaksi, dan lain sebagainya. ',
+    github: '',
+    demo: '',
+    view: 'https://chatbot.centralai.id/',
   },
   {
     id: 3,
-    image: "https://taqiyyaghazi.github.io/img/projects/sgi.png",
-    title: "Desain Brand Logo Sekolah Generasi Indonesia",
-    desc: "Sekolah Generasi Indonesia merupakan sekolah gratis yang dibangun dibawah naungan komunitas BersamaBisa.id.",
-    github: "",
-    demo: "",
-    view: "",
+    image:
+      'https://raw.githubusercontent.com/taqiyyaghazi/taqiyyaghazi.github.io/main/img/projects/proly.png',
+    title: 'Proly (Product Analysis) App',
+    desc: 'Proly merupakan website analisis sentimen yang dapat anda gunakan untuk mendapatkan informasi sentimen positif dan negatif untuk perkembangan toko online anda, sistem rekomendasi bagi user yang ingin membeli produk di toko online dan sistem rekomendasi bagi anda untuk meningkatkan toko anda menjadi lebih baik.',
+    github: '',
+    demo: 'http://proly.herokuapp.com/',
+    view: '',
   },
   {
     id: 4,
-    image: "https://taqiyyaghazi.github.io/img/projects/proly.png",
-    title: "Proly (Product Analysis) App",
-    desc: "Aplikasi yang dibuat menggunakan model machine learning dan dapat menganalisis sentimen produk melalui ulasannya.",
-    github: "",
-    demo: "http://proly.herokuapp.com/",
-    view: "",
+    image:
+      'https://raw.githubusercontent.com/taqiyyaghazi/taqiyyaghazi.github.io/main/img/projects/backend%20bisa%20ai.png',
+    title: 'Back End Sistem Pengelolaan BISA AI Academy',
+    desc: 'Pembuatan Back End untuk platform pengelolaan kegiatan MSIB seperti tambah, edit, lihat, hapus rencana pembelajaran dan sertifikat bagi mahasiswa maupun admin.',
+    github: '',
+    demo: '',
+    view: 'https://elearning.bisaai.id/login/index.php',
   },
 ];
 
 const codingProject = data.map(
   ({ id, image, title, desc, github, demo, view }) => {
-    if (github !== "" && demo !== "") {
+    if (github !== '' && demo !== '') {
       return (
         <SwiperSlide key={id} className="portfolio__item">
           <div className="portfolio__item-image">
@@ -61,16 +65,21 @@ const codingProject = data.map(
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className="portfolio__item-cta">
-            <a href={github} className="btn" target="_blank">
+            <a href={github} className="btn" target="_blank" rel="noreferrer">
               Github
             </a>
-            <a href={demo} className="btn btn-primary" target="_blank">
+            <a
+              href={demo}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo
             </a>
           </div>
         </SwiperSlide>
       );
-    } else if (demo !== "") {
+    } else if (demo !== '') {
       return (
         <SwiperSlide key={id} className="portfolio__item">
           <div className="portfolio__item-image">
@@ -79,7 +88,12 @@ const codingProject = data.map(
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className="portfolio__item-cta">
-            <a href={demo} className="btn btn-primary" target="_blank">
+            <a
+              href={demo}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo
             </a>
           </div>
@@ -94,7 +108,12 @@ const codingProject = data.map(
           <h3>{title}</h3>
           <p>{desc}</p>
           <div className="portfolio__item-cta">
-            <a href={view} className="btn btn-primary" target="_blank">
+            <a
+              href={view}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               View
             </a>
           </div>

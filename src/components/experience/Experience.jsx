@@ -1,6 +1,6 @@
-import React from "react";
-import "./experience.css";
-import { BsFillPatchCheckFill } from "react-icons/bs";
+import React from 'react';
+import './experience.css';
+import { BsFillPatchCheckFill } from 'react-icons/bs';
 
 const Experience = () => {
   return (
@@ -9,9 +9,9 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-      <div className="experience__ai">
+        <div className="experience__ai">
           <h3>Artificial Intelligence</h3>
-          <h5>3 Years Experience</h5>
+          <h5>2 Years Experience</h5>
           <div className="experience__content">
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
