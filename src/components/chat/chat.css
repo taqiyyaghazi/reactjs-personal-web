@@ -22,8 +22,8 @@
 }
 
 .rcw-conversation-container .avatar {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 0px;
   margin: 0 auto 10px auto;
 }
@@ -67,5 +67,13 @@
 
   .rcw-conversation-container .rcw-close-button {
     background-color: var(--color-primary);
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .rcw-launcher {
+    bottom: 90px;
+    right: 20px;
   }
 }

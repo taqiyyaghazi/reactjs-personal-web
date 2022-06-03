@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Widget, addResponseMessage, toggleMsgLoader } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import BOT from '../../assets/bot-icon.png';
-import "./chat.css";
+import './chat.css';
 
 function Chat() {
   useEffect(() => {
@@ -30,19 +30,19 @@ function Chat() {
     fetch(apiUrl, requestOptions)
       .then((res) => res.json())
       .then((msgBot) => {
-          document
-            .getElementsByClassName('loader')[0]
-            .classList.remove('active');
-          addResponseMessage(msgBot.data.response);
+        document.getElementsByClassName('loader')[0].classList.remove('active');
+        addResponseMessage(msgBot.data.response);
       });
   };
-  return <Widget
-  handleNewUserMessage={handleNewUserMessage}
-  titleAvatar={BOT}
-  title="Zii's Bot"
-  subtitle="Ask something about me"
-  emojis="true"
-/>;
+  return (
+    <Widget
+      handleNewUserMessage={handleNewUserMessage}
+      titleAvatar={BOT}
+      title="Zii's Bot"
+      subtitle="Ask something about me"
+      emojis="true"
+    />
+  );
 }
 
 export default Chat;
