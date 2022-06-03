@@ -1,9 +1,6 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/about-me.png";
-import { FaAward } from "react-icons/fa";
-import { FaUserFriends } from "react-icons/fa";
-import { BsFillFolderFill } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -13,27 +10,10 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About" />
           </div>
         </div>
         <div className="about__content">
-          {/* <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <FaUserFriends className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
-            </article>
-            <article className="about__card">
-              <BsFillFolderFill className="about__icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
-            </article>
-          </div> */}
           <p>
             I am an Artificial Intelligence Engineer specially in Machine
             Learning. I'm currently studying the Natural Language Processing
@@ -43,7 +23,7 @@ const About = () => {
             Graphics. I am a person who likes to learn new things especially
             about technology.
           </p>
-          <a href="https://www.linkedin.com/in/taqiyya-ghazi/" target="_blank" className="btn btn-primary">
+          <a href="https://www.linkedin.com/in/taqiyya-ghazi/" target="_blank" className="btn btn-primary" rel="noreferrer">
             Know Me More
           </a>
         </div>

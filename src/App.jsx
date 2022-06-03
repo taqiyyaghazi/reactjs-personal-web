@@ -6,11 +6,13 @@ import Experience from './components/experience/Experience';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Chat from './components/chat/Chat';
 
 const App = () => {
   setTimeout(() => {
     document.getElementById('loading').style.display = 'none';
   }, 4000);
+
   return (
     <div>
       <Header />
@@ -20,6 +22,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <Chat />
     </div>
   );
 };

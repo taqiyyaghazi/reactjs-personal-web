@@ -1,0 +1,71 @@
+/* CHAT WIDGET */
+.rcw-launcher {
+  box-shadow: none;
+  background: var(--color-primary);
+  z-index: 100;
+}
+
+.rcw-open-launcher {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.rcw-close-launcher {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.rcw-conversation-container {
+  box-shadow: none;
+}
+
+.rcw-conversation-container .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 0px;
+  margin: 0 auto 10px auto;
+}
+
+.rcw-conversation-container .rcw-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rcw-client .rcw-message-text {
+  background-color: var(--color-primary-variant);
+  color: var(--color-bg);
+}
+
+.rcw-response .rcw-message-text {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.loader-container {
+  background-color: var(--color-primary);
+}
+
+.loader-dots {
+  background-color: var(--color-white);
+}
+
+.rcw-sender {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rcw-input {
+  color: var(--color-bg);
+}
+
+@media screen and (max-width: 800px) {
+  .rcw-conversation-container {
+    max-width: 100vh;
+  }
+
+  .rcw-conversation-container .rcw-close-button {
+    background-color: var(--color-primary);
+  }
+}

@@ -115,6 +115,8 @@ img {
   object-fit: cover;
 }
 
+/* PRE-LOADER */
+
 #loading {
   position: fixed;
   top: 0;
@@ -148,6 +150,8 @@ img {
   display: none;
 }
 
+
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
   .container {
@@ -163,7 +167,7 @@ img {
     flex-direction: column;
   }
 
-  .loading-text{
+  .loading-text {
     text-align: center;
   }
 
@@ -173,6 +177,16 @@ img {
 
   #loading-center {
     display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .rcw-conversation-container {
+    max-width: 100vh;
+  }
+
+  .rcw-conversation-container .rcw-close-button {
+    background-color: var(--color-primary);
   }
 }
 
